@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio — Biznesiniz Üçün Satış Yönümlü Veb Saytlar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. HEADER (NAVİQASİYA) -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-code logo-icon"></i> Web<span>Studio</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#services">Xidmətlər</a>
+                <a href="#why-us">Niyə Biz?</a>
+                <a href="#pricing">Paketlər</a>
+                <a href="#process">İş Prosesi</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="nav-right">
+                <a href="admin.html" class="admin-link"><i class="fa-solid fa-lock"></i> Admin</a>
+                <button onclick="openModal()" class="btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Pulsuz Məsləhət Al
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero">
+        <div class="badge"><i class="fa-solid fa-bolt"></i> TikTok & Instagram Trafiki Üçün Xüsusi</div>
+        <h1>Biznesinizi İnternetdə <span>Satış Maşınına</span> Çevirin!</h1>
+        <p>Sosial şəbəkələrdən gələn potensial müştərilərinizi WhatsApp-a və birbaşa satışa yönləndirən ultra sürətli, müasir və Firebase dəstəkli veb saytlar hazırlayırıq.</p>
+        
+        <div class="hero-btns">
+            <button onclick="openModal()" class="btn-primary btn-large">
+                Pulsuz Məsləhət Al <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="#pricing" class="btn-secondary btn-large">Paketlərə Bax</a>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Mobil Uyğunluq</p>
+            </div>
+            <div class="stat-item">
+                <h3>&lt; 1 San</h3>
+                <p>Yüklənmə Sürəti</p>
+            </div>
+            <div class="stat-item">
+                <h3>+40%</h3>
+                <p>Satış Dönüşümü</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Texniki Dəstək</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. XİDMƏTLƏRİMİZ (SERVICES) -->
+    <section id="services" class="section">
+        <div class="section-title">
+            <h2>Xidmətlərimiz</h2>
+            <p>Ehtiyacınıza və büdcənizə uyğun ən effektiv raqamsal həllər</p>
+        </div>
+
+        <div class="grid grid-3">
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+                <h3>Landing Page (Tək Səhifə)</h3>
+                <p>TikTok/Instagram reklamlarından gələn auditoriyanı sürətlə müştəriyə çevirən yüksək konversiyalı tək səhifəlik saytlar.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <h3>E-Ticarət & WhatsApp Mağaza</h3>
+                <p>Məhsullarınızı kateqoriyalarla nümayiş etdirin. Müştəri bir kliklə səbətini WhatsApp-ınıza sifariş olaraq göndərsin.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-sliders"></i></div>
+                <h3>Firebase Admin Panelli Saytlar</h3>
+                <p>Sifarişləri, müraciətləri və müştəri bazanızı öz telefonunuzdan və ya kompüterinizdən rahat idarə edə biləcəyiniz panellər.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. NİYƏ BİZ? (WHY US) -->
+    <section id="why-us" class="section bg-white">
+        <div class="section-title">
+            <h2>Niyə Məhz Bizim Saytlar?</h2>
+            <p>Adi saytlarla bizim hazırladığımız sistemlər arasındakı fərq</p>
+        </div>
+
+        <div class="grid grid-2">
+            <div class="feature-box">
+                <i class="fa-solid fa-gauge-high feature-icon"></i>
+                <div>
+                    <h4>Maksimum Yüklənmə Sürəti</h4>
+                    <p>Müştərilərin 50%-i 3 saniyədən gec açılan saytları tərk edir. Bizim saytlar 1 saniyədən cəld açılır.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-mobile-screen-button feature-icon"></i>
+                <div>
+                    <h4>%100 Mobil İlk (Mobile-First) Dizayn</h4>
+                    <p>TikTok və Instagram istifadəçilərinin tamamı telefondadır. Saytlarımız bütün telefon ekranlarında mükəmməl görünür.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-database feature-icon"></i>
+                <div>
+                    <h4>Bulud Bazası (Firebase Firestore)</h4>
+                    <p>Məlumatlarınız itmir, təhlükəsiz saxlanılır və anında sizin Admin Panelinizə düşür.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-brands fa-whatsapp feature-icon"></i>
+                <div>
+                    <h4>WhatsApp İnteqrasiyası</h4>
+                    <p>Form dolduran müştəriyə tək kliklə avtomatik hazırlanmış WhatsApp mesajı göndərə bilərsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PAKETLƏRİMİZ VƏ QİYMƏTLƏR (PRICING) -->
+    <section id="pricing" class="section">
+        <div class="section-title">
+            <h2>Qiymət Paketlərimiz</h2>
+            <p>Biznesinizin ölçüsünə uyğun paketi seçin</p>
+        </div>
+
+        <div class="grid grid-3">
+            <!-- Start Paket -->
+            <div class="price-card">
+                <div class="price-header">
+                    <h3>Start Paket</h3>
+                    <div class="price">150 <span>AZN-dən</span></div>
+                    <p>Sosial şəbəkələrdə yeni başlayanlar üçün</p>
+                </div>
+                <ul class="price-features">
+                    <li><i class="fa-solid fa-check"></i> Modern Landing Page (Tək Səhifə)</li>
+                    <li><i class="fa-solid fa-check"></i> Mobil və Planşet Uyğunluğu</li>
+                    <li><i class="fa-solid fa-check"></i> WhatsApp Düyməsi İnteqrasiyası</li>
+                    <li><i class="fa-solid fa-check"></i> Sürətli Yüklənmə (SEO Baza)</li>
+                    <li class="disabled"><i class="fa-solid fa-xmark"></i> Firebase Admin Paneli</li>
+                </ul>
+                <button onclick="openModal()" class="btn-secondary full-width">Müraciət Et</button>
+            </div>
+
+            <!-- Business Paket (Popular) -->
+            <div class="price-card popular">
+                <div class="popular-badge">Ən Çox Seçilən</div>
+                <div class="price-header">
+                    <h3>Biznes Paket</h3>
+                    <div class="price">300 <span>AZN-dən</span></div>
+                    <p>Aktiv satış edən bizneslər üçün</p>
+                </div>
+                <ul class="price-features">
+                    <li><i class="fa-solid fa-check"></i> Zəngin Veb Sayt Strukturu</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Firebase Firestore Baza</strong></li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Özəl Admin Paneli</strong></li>
+                    <li><i class="fa-solid fa-check"></i> Real-time Müraciət Bildirişləri</li>
+                    <li><i class="fa-solid fa-check"></i> Birbaşa WhatsApp İnteqrasiyası</li>
+                </ul>
+                <button onclick="openModal()" class="btn-primary full-width">Müraciət Et</button>
+            </div>
+
+            <!-- Premium Paket -->
+            <div class="price-card">
+                <div class="price-header">
+                    <h3>Premium Paket</h3>
+                    <div class="price">500+ <span>AZN</span></div>
+                    <p>Tam e-ticarət və xüsusi sistem istəyənlərə</p>
+                </div>
+                <ul class="price-features">
+                    <li><i class="fa-solid fa-check"></i> E-Ticarət Kataloq Saytı</li>
+                    <li><i class="fa-solid fa-check"></i> Gelişmiş Admin İdarəetmə Paneli</li>
+                    <li><i class="fa-solid fa-check"></i> Məhsul Əlavə Etmə / Silmə Sistemləri</li>
+                    <li><i class="fa-solid fa-check"></i> Analitika və Hesabatlar</li>
+                    <li><i class="fa-solid fa-check"></i> VIP 24/7 Texniki Dəstək</li>
+                </ul>
+                <button onclick="openModal()" class="btn-secondary full-width">Müraciət Et</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. İŞ PROSESİ (PROCESS) -->
+    <section id="process" class="section bg-white">
+        <div class="section-title">
+            <h2>İş Prosesimiz Neçə İdarə Olunur?</h2>
+            <p>Saytınız 3-5 gün ərzində tam hazır vəziyyətə gətirilir</p>
+        </div>
+
+        <div class="grid grid-4">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Müzakirə & Analiz</h4>
+                <p>Formu doldurursunuz, WhatsApp-da biznesinizi və istəklərinizi dəqiqləşdiririk.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Dizayn & Konsept</h4>
+                <p>Brendinizə uyğun mavi/ağ tonlarda müasir interfeys prototipi hazırlayırıq.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Kodlaşdırma & Firebase</h4>
+                <p>Saytı ultra sürətli kodlayır və Firebase verilənlər bazasını inteqrasiya edirik.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">4</div>
+                <h4>Təhvil & Təlimat</h4>
+                <p>Saytı canlıya çıxarırıq və Admin paneldən necə istifadə edəcəyinizi göstəririk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ (TEZ-TEZ VERİLƏN SUALLAR) -->
+    <section id="faq" class="section">
+        <div class="section-title">
+            <h2>Tez-tez Verilən Suallar</h2>
+            <p>Ağlınızda yarana biləcək sualların cavabları</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> Sayt neçə günə hazır olur?</h4>
+                <p>Layihənin həcmindən asılı olaraq landing page saytları 2-3 günə, Admin panelli mürəkkəb saytlar isə 4-7 günə təhvil verilir.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> Admin panelə daxil olmaq çətindir?</h4>
+                <p>Xeyr! Panel çox sadədir. Daxil olub yalnız müraciət edən müştərilərin siyahısını və telefon nömrələrini görürsünüz. Tək kliklə WhatsApp-a keçə bilirsiniz.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> Domen və Hosting ödənişlidir?</h4>
+                <p>Firebase infrastrukturu sayəsində hosting ödənişsizdir! Yalnız öz brendinizə uyğun `.az` və ya `.com` domen almağınız kifayətdir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. LEAD CAPTURE MODAL -->
+    <div id="leadModal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <button onclick="closeModal()" class="close-btn">&times;</button>
+            <div class="modal-header">
+                <h2>Pulsuz Məsləhət Al</h2>
+                <p>Məlumatlarınızı qeyd edin, biznesiniz üçün ideal sayt konseptini pulsuz müzakirə edək.</p>
+            </div>
+
+            <form id="leadForm" onsubmit="handleLeadSubmit(event)">
+                <div class="form-group">
+                    <label>Ad və Soyadınız</label>
+                    <input type="text" id="leadName" required placeholder="Məs: Kamran Əliyev">
+                </div>
+                <div class="form-group">
+                    <label>WhatsApp Nömrəniz</label>
+                    <input type="tel" id="leadPhone" required placeholder="050 123 45 67">
+                </div>
+                <div class="form-group">
+                    <label>Maraqlandığınız Paket</label>
+                    <select id="leadProjectType">
+                        <option value="Start Paket (150 AZN)">Start Paket (Landing Page)</option>
+                        <option value="Biznes Paket (300 AZN)">Biznes Paket (Firebase + Admin)</option>
+                        <option value="Premium Paket (500+ AZN)">Premium Paket (E-Ticarət)</option>
+                        <option value="Xüsusi Layihə">Digər / Xüsusi Layihə</option>
+                    </select>
+                </div>
+                <button type="submit" id="submitBtn" class="btn-primary full-width">Müraciəti Göndər</button>
+            </form>
+
+            <div id="successMessage" class="hidden success-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Təşəkkür Edirik!</h3>
+                <p>Müraciətiniz Admin Panelimizə düşdü. Sizinlə 15 dəqiqə ərzində WhatsApp-da əlaqə saxlayacağıq.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo" style="color: white;">Web<span>Studio</span></div>
+            <p>© 2026 WebStudio. Bütün hüquqlar qorunur.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK-lar və Skriptlər -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
