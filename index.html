@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio — Biznesiniz Üçün Satış Yönümlü Veb Saytlar</title>
+    
+    <!-- Google Search Console Təsdiq Teqi -->
+    <meta name="google-site-verification" content="google43db4f7321a16af1" />
+    
+    <title>DeotriWeb — Biznesiniz Üçün Satış Yönümlü Veb Saytlar</title>
+    <meta name="description" content="DeotriWeb — TikTok və Instagram trafikinizi WhatsApp-a və birbaşa satışa yönləndirən ultra sürətli, Firebase dəstəkli veb saytlar hazırlayır.">
+    <meta name="keywords" content="DeotriWeb, veb sayt sifarişi, landing page, firebase, satış yönümlü saytlar, veb dizayn">
+    <meta name="author" content="DeotriWeb">
 
-    <!-- SEO Meta Teqləri (Google Üçün) -->
-    <meta name="description" content="WebStudio — TikTok və Instagram trafikinizi satışa çevirən ultra sürətli, modern və Firebase dəstəkli veb saytların hazırlanması.">
-    <meta name="keywords" content="veb sayt sifarişi, landing page, e-ticarət, seo, firebase, bakıda veb sayt yaradılması">
-    <meta name="author" content="WebStudio">
-
-    <!-- Open Graph Teqləri (WhatsApp Paylaşımları Üçün) -->
-    <meta property="og:title" content="WebStudio — Biznesiniz Üçün Satış Yönümlü Veb Saytlar">
-    <meta property="og:description" content="Sürətli, mobil uyğun və satış yönümlü veb saytlar. Pulsuz məsləhət al!">
+    <!-- Open Graph (Sosial Mediyada Paylaşım Önbaxışı) -->
+    <meta property="og:title" content="DeotriWeb — Biznesiniz Üçün Satış Yönümlü Veb Saytlar">
+    <meta property="og:description" content="Sosial şəbəkələrdən gələn potensial müştərilərinizi WhatsApp-a yönləndirən ultra sürətli saytlar.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deotriweb.vercel.app/">
 
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome İkonları -->
@@ -25,7 +28,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <i class="fa-solid fa-code logo-icon"></i> Web<span>Studio</span>
+                <i class="fa-solid fa-code logo-icon"></i> Deotri<span>Web</span>
             </div>
             <nav class="nav-links">
                 <a href="#services">Xidmətlər</a>
@@ -157,14 +160,14 @@
             <div class="price-card">
                 <div class="price-header">
                     <h3>Start Paket</h3>
-                    <div class="price">150 <span>AZN-dən</span></div>
+                    <div class="price">100 <span>AZN-dən</span></div>
                     <p>Sosial şəbəkələrdə yeni başlayanlar üçün</p>
                 </div>
                 <ul class="price-features">
-                    <li><i class="fa-solid fa-check"></i> Modern Landing Page (Tək Səhifə)</li>
+                    <li><i class="fa-solid fa-check"></i> One Page (Tək Səhifə)</li>
                     <li><i class="fa-solid fa-check"></i> Mobil və Planşet Uyğunluğu</li>
-                    <li><i class="fa-solid fa-check"></i> WhatsApp Düyməsi İnteqrasiyası</li>
-                    <li><i class="fa-solid fa-check"></i> Sürətli Yüklənmə</li>
+                    <li class="disabled"><i class="fa-solid fa-xmark"></i> WhatsApp Düyməsi İnteqrasiyası</li>
+                    <li><i class="fa-solid fa-check"></i> Sürətli Yüklənmə (SEO Baza)</li>
                     <li class="disabled"><i class="fa-solid fa-xmark"></i> Firebase Admin Paneli</li>
                 </ul>
                 <button onclick="openModal()" class="btn-secondary full-width">Müraciət Et</button>
@@ -175,15 +178,15 @@
                 <div class="popular-badge">Ən Çox Seçilən</div>
                 <div class="price-header">
                     <h3>Biznes Paket</h3>
-                    <div class="price">300 <span>AZN-dən</span></div>
+                    <div class="price">200 <span>AZN-dən</span></div>
                     <p>Aktiv satış edən bizneslər üçün</p>
                 </div>
                 <ul class="price-features">
                     <li><i class="fa-solid fa-check"></i> Zəngin Veb Sayt Strukturu</li>
                     <li><i class="fa-solid fa-check"></i> <strong>Firebase Firestore Baza</strong></li>
                     <li><i class="fa-solid fa-check"></i> <strong>Özəl Admin Paneli</strong></li>
-                    <li><i class="fa-solid fa-check"></i> Təməl Google SEO Optimallaşdırılması</li>
-                    <li><i class="fa-solid fa-check"></i> Birbaşa WhatsApp İnteqrasiyası</li>
+                    <li><i class="fa-solid fa-check"></i> WhatsApp Düyməsi İnteqrasiyası</li>
+                    <li><i class="fa-solid fa-check"></i> Mobil və Planşet Uyğunluğu</li>
                 </ul>
                 <button onclick="openModal()" class="btn-primary full-width">Müraciət Et</button>
             </div>
@@ -192,15 +195,18 @@
             <div class="price-card">
                 <div class="price-header">
                     <h3>Premium Paket</h3>
-                    <div class="price">500+ <span>AZN</span></div>
+                    <div class="price">300 <span>AZN</span></div>
                     <p>Tam e-ticarət və xüsusi sistem istəyənlərə</p>
                 </div>
                 <ul class="price-features">
-                    <li><i class="fa-solid fa-check"></i> E-Ticarət Kataloq Saytı</li>
-                    <li><i class="fa-solid fa-check"></i> Gəlişmiş Admin İdarəetmə Paneli</li>
-                    <li><i class="fa-solid fa-check"></i> Genişləndirilmiş SEO Dəstəyi</li>
-                    <li><i class="fa-solid fa-check"></i> Analitika və Hesabatlar</li>
-                    <li><i class="fa-solid fa-check"></i> VIP 24/7 Texniki Dəstək</li>
+                    <li><i class="fa-solid fa-check"></i> Zəngin Veb Sayt Strukturu</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Firebase Firestore Baza</strong></li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Özəl Admin Paneli</strong></li>
+                    <li><i class="fa-solid fa-check"></i> WhatsApp Düyməsi İnteqrasiyası</li>
+                    <li><i class="fa-solid fa-check"></i> Mobil və Planşet Uyğunluğu</li>
+                    <li><i class="fa-solid fa-check"></i> Telegram Bot</li>
+                    <li><i class="fa-solid fa-check"></i> Xüsusi Animasiyalar</li>
+                    <li><i class="fa-solid fa-check"></i> Real-time Dəstək</li>
                 </ul>
                 <button onclick="openModal()" class="btn-secondary full-width">Müraciət Et</button>
             </div>
@@ -282,9 +288,9 @@
                 <div class="form-group">
                     <label>Maraqlandığınız Paket</label>
                     <select id="leadProjectType">
-                        <option value="Start Paket (150 AZN)">Start Paket (Landing Page)</option>
-                        <option value="Biznes Paket (300 AZN)">Biznes Paket (Firebase + Admin)</option>
-                        <option value="Premium Paket (500+ AZN)">Premium Paket (E-Ticarət)</option>
+                        <option value="Start Paket (100 AZN)">Start Paket (Landing Page - 100 AZN)</option>
+                        <option value="Biznes Paket (200 AZN)">Biznes Paket (Firebase + Admin - 200 AZN)</option>
+                        <option value="Premium Paket (300 AZN)">Premium Paket (E-Ticarət - 300 AZN)</option>
                         <option value="Xüsusi Layihə">Digər / Xüsusi Layihə</option>
                     </select>
                 </div>
@@ -302,8 +308,8 @@
     <!-- 9. FOOTER -->
     <footer>
         <div class="footer-container">
-            <div class="logo" style="color: white;">Web<span>Studio</span></div>
-            <p>© 2026 WebStudio. Bütün hüquqlar qorunur.</p>
+            <div class="logo" style="color: white;">Deotri<span>Web</span></div>
+            <p>© 2026 DeotriWeb. Bütün hüquqlar qorunur.</p>
             <div class="social-links">
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
