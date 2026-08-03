@@ -1,4 +1,3 @@
-// Firebase Konfiqurasiya Məlumatları
 const firebaseConfig = {
   apiKey: "AIzaSyBq0McXVuGWsm2lgttN14nAlqXB0bQQC3U",
   authDomain: "deotriweb.firebaseapp.com",
@@ -9,10 +8,12 @@ const firebaseConfig = {
   measurementId: "G-BMT3FHS7YK"
 };
 
-// 1. Firebase-i daxil olan CDN vasitəsilə başladırıq
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
 }
 
-// 2. Verilənlər bazasını (Firestore) qlobal db dəyişəninə mənimsədirik
+// 1. Firestore Verilənlər Bazası
 const db = firebase.firestore();
+
+// 2. VACİB: Admin Girişi Üçün Auth Dəyişəni
+const auth = firebase.auth();
